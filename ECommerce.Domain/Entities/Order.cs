@@ -6,13 +6,15 @@ using System.Text;
 
 namespace ECommerce.Domain.Entities
 {
+
+    // Joy Sree Rama
     public class Order
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; private set; }
 
-
+     
         [Required]
         public int CustomerId { get; private set; }
 
