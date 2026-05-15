@@ -60,9 +60,6 @@ namespace ECommerce.Domain.Entities
         private void CalculateTotalAmount()
         {
             TotalAmount = Items.Sum(i => i.UnitPrice * i.Quantity);
-
-
-
         }
     }
 }
