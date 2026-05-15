@@ -12,6 +12,7 @@ namespace ECommerce.Domain.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; private set; }
 
+
         [Required]
         public int CustomerId { get; private set; }
 
