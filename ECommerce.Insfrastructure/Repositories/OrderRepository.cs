@@ -26,7 +26,7 @@ namespace ECommerce.Insfrastructure.Repositories
 
         public async Task<Order?> GetByIdAsync(int id)
         {
-            return await _context.Orders.Include(o => o.Items)
+            return await _context.Orders.Include(o => o.Items) //Eager loading of related entities
                                         .AsNoTracking()
                                         .FirstOrDefaultAsync(o => o.Id == id);
         }
