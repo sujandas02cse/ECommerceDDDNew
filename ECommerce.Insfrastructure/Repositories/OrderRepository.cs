@@ -22,6 +22,7 @@ namespace ECommerce.Insfrastructure.Repositories
         {
            await _context.Orders.AddAsync(order);
            await _context.SaveChangesAsync();
+           
         }
 
         public async Task<Order?> GetByIdAsync(int id)

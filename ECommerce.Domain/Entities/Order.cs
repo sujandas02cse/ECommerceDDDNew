@@ -35,6 +35,7 @@ namespace ECommerce.Domain.Entities
         {
             CustomerId = customerId;
             ShippingAddress = shippingAddress;
+            OrderDate = DateTime.Now;
         }
         public void AddItem(Product product, int quantity)
         {

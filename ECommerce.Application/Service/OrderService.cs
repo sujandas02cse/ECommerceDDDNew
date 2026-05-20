@@ -67,9 +67,10 @@ namespace ECommerce.Application.Service
             if (!_orderDomainService.CanPlaceOrder(customer, order.Items.ToList()))
             {
                 throw new Exception("Order cannot be placed due to domain validation failure.");
-                await _orderRepository.AddAysnc(order);
+               
              
             }
+            await _orderRepository.AddAysnc(order);
             return order.Id;
         }
     }
